@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="runnel-application" />
+        <module name="data-loader" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="data-loader" target="1.8" />
+      <module name="data-loading" target="1.8" />
+      <module name="runnel" target="1.8" />
+      <module name="runnel-application" target="1.8" />
+      <module name="runnel-common" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="data-loader" options="-parameters" />
+      <module name="data-loading" options="-parameters" />
+      <module name="runnel" options="" />
+      <module name="runnel-application" options="-parameters" />
+      <module name="runnel-common" options="-parameters" />
+    </option>
+  </component>
+</project>
